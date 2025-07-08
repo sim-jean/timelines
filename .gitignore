@@ -2,5 +2,6 @@
 .Rdata
 .Rproj.user
 *.html
+*.xslx
 outputs/
 data/
