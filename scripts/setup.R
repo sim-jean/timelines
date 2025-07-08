@@ -1,32 +1,22 @@
-if(!('renv' %in% installed.packages())){
+if (!requireNamespace("renv", quietly = TRUE)) {
   install.packages("renv")
 }
 
-library(renv)
-
+# 2. Restaurer les packages du projet
 renv::restore()
 
-
-if(!("here" %in% installed.packages())){
-  install.packages("here")
-  install.packages('magrittr')
-  install.packages('timevis')
-  install.packages("stringr")
-  install.packages("readxl")
-  install.packages('dplyr')
-  install.packages("lubridate")
-  install.packages("tidyr")
-  install.packages('shiny') 
-  install.packages('ggplot2')
-  install.packages("shinyWidgets")
-  install.packages("webshot", "webshot2")
-  library(webshot)
-
-  renv::snapshot()
-  
-}
-
+# 3. Charger les packages du projet ensuite
+library(shiny)
+library(timevis)
+library(readxl)
 library(here)
+library(magrittr)
+library(dplyr)
+library(lubridate)
+library(tidyr)
+library(shinyWidgets)
+library(webshot)
+library(webshot2)
 
 if(!dir.exists(here("data"))){
   dir.create(here("data"))
