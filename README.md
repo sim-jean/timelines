@@ -69,6 +69,7 @@ Dans le répertoire du projet, lancer l’application Shiny avec le script `laun
 - `/outputs/`: dossier de sauvegarde PNG
 - `README.Rmd` : ce fichier de documentation.
 - `renv` : dossier de gestion des dépendances R.
+- `renv.lock`: fichier de gestion des dépendances
 
 
 ---

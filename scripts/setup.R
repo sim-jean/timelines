@@ -3,7 +3,8 @@ if(!('renv' %in% installed.packages())){
 }
 
 library(renv)
-renv::init()
+
+renv::restore()
 
 
 if(!("here" %in% installed.packages())){
